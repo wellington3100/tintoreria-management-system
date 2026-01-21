@@ -37,37 +37,53 @@ Este documento registra el avance diario del proyecto, describiendo las decision
 
 
 ## (Primera fecha)
- --- TINTORERIA --- -
-
-- PROYECTO: SISTEMA DE TINTORERÍA
-
 - Objetivo:
 Registrar el trabajo diario de la tintorería de forma simple.
 
 - Entidades principales:
 - 1. Cliente
+     
 	-Nombre
+  
 	-id_cliente
+  
 	-Historial de entrega
+  
 2. Prenda
+   
 	-Color
-	-Tipo de prenda
-	-Material
-	-Hora entrada
-	-Hora salida
-3. Servicio
-	-Que servicio
-	-Precio
-	-Hora entrada
-	-Hora salida (Creo que iría aca y no en prenda pero igual lo mantengo en ambos para que resuelvas mi duda)
-4. Orden (Ticket)
-	-id_cliente
-	-hora entrada
-	-hora salida
-	-estado
-	-total
-	-fecha
 
+	-Tipo de prenda
+
+	-Material
+
+	-Hora entrada
+
+	-Hora salida
+
+3. Servicio
+   
+	-Que servicio
+
+	-Precio
+
+	-Hora entrada
+
+	-Hora salida
+
+5. Orden (Ticket)
+   
+	-id_cliente
+
+	-hora entrada
+
+	-hora salida
+
+	-estado
+
+	-total
+
+	-fecha
 
 Problemas actuales del negocio:
 - Muchas cosas innecesarias información extra
