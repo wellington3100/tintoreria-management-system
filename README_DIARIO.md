@@ -4,7 +4,7 @@ Este documento registra el avance diario del proyecto, describiendo las decision
 
 ---
 
-## Día 1 – Análisis del negocio
+## Día 1 – Análisis del negocio 2026-01-20
 **Duración:** 25 minutos
 
 ### Actividades realizadas
@@ -41,7 +41,7 @@ Este documento registra el avance diario del proyecto, describiendo las decision
 Registrar el trabajo diario de la tintorería de forma simple.
 
 - Entidades principales:
-- 1. Cliente
+ 1. Cliente
      
 	-Nombre
   
@@ -86,7 +86,7 @@ Registrar el trabajo diario de la tintorería de forma simple.
 	-fecha
 
 Problemas actuales del negocio:
-- Muchas cosas innecesarias información extra
+- Muchas cosas innecesarias como información extra
 - #### (Pendiente)
 
 Información que sería útil ver rápido:
@@ -116,7 +116,7 @@ De ahi tenemos 2 opciones como tintoreria:
   -Se cobra la prenda
 
 -------------------------------------------------------
-## Día 2 – Diseño inicial de tablas SQL
+## Día 2 – Diseño inicial de tablas SQL 2026-01-20
 **Duración:** 25 minutos
 
 ### Actividades realizadas
