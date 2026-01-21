@@ -2,12 +2,6 @@
 
 ## Descripción
 Este proyecto es un sistema de gestión diseñado para una tintorería real, con el objetivo de digitalizar y simplificar el registro diario de clientes, prendas y órdenes de trabajo.
-    
-    
-    
-    prueba del .\update.ps1
-
-
 
 El sistema busca resolver problemas comunes en tintorerías tradicionales, como:
 - Pérdida de tickets
