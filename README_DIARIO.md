@@ -4,7 +4,7 @@ Este documento registra el avance diario del proyecto, describiendo las decision
 
 ---
 
-## Día 1 – Análisis del negocio 2026-01-20
+## Día 1 – Análisis del negocio
 **Duración:** 25 minutos
 
 ### Actividades realizadas
@@ -42,51 +42,31 @@ Registrar el trabajo diario de la tintorería de forma simple.
 
 - Entidades principales:
  1. Cliente
-     
 	-Nombre
-  
 	-id_cliente
-  
 	-Historial de entrega
-  
 2. Prenda
-   
 	-Color
-
 	-Tipo de prenda
-
 	-Material
-
 	-Hora entrada
-
 	-Hora salida
-
 3. Servicio
-   
 	-Que servicio
-
 	-Precio
-
 	-Hora entrada
-
-	-Hora salida
-
-5. Orden (Ticket)
-   
+	-Hora salida (Creo que iría aca y no en prenda pero igual lo mantengo en ambos para que resuelvas mi duda)
+4. Orden (Ticket)
 	-id_cliente
-
 	-hora entrada
-
 	-hora salida
-
 	-estado
-
 	-total
-
 	-fecha
 
+
 Problemas actuales del negocio:
-- Muchas cosas innecesarias como información extra
+- Muchas cosas innecesarias información extra
 - #### (Pendiente)
 
 Información que sería útil ver rápido:
@@ -116,15 +96,32 @@ De ahi tenemos 2 opciones como tintoreria:
   -Se cobra la prenda
 
 -------------------------------------------------------
-## Día 2 – Diseño inicial de tablas SQL 2026-01-20
-**Duración:** 25 minutos
+
+## 📅 Día 2 – Diseño de base de datos y control de versiones
+
+### Objetivo del día
+Iniciar el desarrollo técnico del sistema mediante la creación del modelo inicial de la base de datos y establecer un flujo correcto de control de versiones usando Git y GitHub.
 
 ### Actividades realizadas
-- Creación de tablas núcleo: cliente, gancho y orden
-- Definición de claves primarias y relaciones
-- Identificación de la orden como eje del sistema
+- Diseño y creación del esquema inicial de la base de datos utilizando SQLite.
+- Definición de las tablas principales del sistema:
+  - **cliente**: datos básicos del cliente, teléfono y estado activo.
+  - **gancho**: representación del sistema físico de ganchos únicos de la tintorería.
+  - **orden**: entidad central que relaciona cliente, gancho, fechas y total.
+- Implementación de claves primarias y foráneas para mantener integridad referencial.
+- Definición de restricción de unicidad para el código de barras de la orden.
+- Creación de un índice por teléfono del cliente para optimizar búsquedas frecuentes.
+- Análisis de feedback externo sobre validaciones de datos y buenas prácticas.
+- Creación y configuración del repositorio en GitHub.
+- Manejo de ramas (`master` y `main`), resolución de conflictos y merge.
+- Documentación del proyecto mediante archivos README.
 
-### Aprendizajes
-- Diseñar bien tablas evita problemas operativos reales
-## 2026-01-20
-- Avance diario
+### Decisiones técnicas
+- El sistema está pensado para uso real en la computadora del negocio, con base de datos local.
+- No toda validación se resolvió en SQL; algunas reglas se delegarán al backend.
+- Se priorizó un diseño simple y escalable, evitando sobreingeniería en esta etapa.
+
+### Estado del proyecto
+- Esquema inicial de base de datos definido y versionado.
+- Repositorio sincronizado correctamente con GitHub.
+- Proyecto preparado para avanzar hacia la definición del flujo de negocio y lógica de estados.
