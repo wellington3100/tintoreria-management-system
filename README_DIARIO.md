@@ -110,3 +110,6 @@ De ahi tenemos 2 opciones como tintoreria:
 
 ### Aprendizajes
 - Diseñar bien tablas evita problemas operativos reales
+
+## 2026-01-20
+- Avance diario
