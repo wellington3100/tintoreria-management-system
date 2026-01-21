@@ -116,3 +116,6 @@ De ahi tenemos 2 opciones como tintoreria:
 
 ## 2026-01-20
 - Avance diario
+
+## 2026-01-20
+- Avance diario
