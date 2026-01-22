@@ -71,3 +71,35 @@ Iniciar el desarrollo técnico del sistema mediante la creación del modelo inic
 - Esquema inicial de base de datos definido y versionado.
 - Repositorio sincronizado correctamente con GitHub.
 - Proyecto preparado para avanzar hacia la definición del flujo de negocio y lógica de estados.
+
+## 📅 Día 3 – Modelado del flujo del negocio (Tintorería)
+
+### Objetivo del día
+Definir correctamente el flujo real de trabajo de la tintorería antes de seguir implementando en la base de datos (evitar errores y retrabajo).
+
+### Actividades realizadas
+- Análisis detallado del **flujo de una orden** dentro de la tintorería.
+- Definición clara de los **estados de una orden**:
+  - RECIBIDA
+  - EN_PROCESO
+  - LISTA
+  - ENTREGADA
+- Definición de los **estados de una prenda**, alineados con la orden.
+- Decisión clave: **no existen entregas parciales**; todas las prendas de una orden se entregan juntas.
+- Definición de reglas de negocio:
+  - La **orden manda** sobre las prendas.
+  - Una orden puede usar **uno o varios ganchos**.
+  - Los ganchos se **liberan únicamente** cuando la orden pasa a estado ENTREGADA.
+  - No se pueden saltar estados.
+- Identificación de escenarios especiales:
+  - Órdenes con muchas prendas.
+  - Uso de múltiples ganchos por orden.
+  - Manejo de incidencias (prenda perdida → revisión del recorrido).
+
+### Decisiones de diseño tomadas
+- El estado se maneja tanto en **orden** como en **prenda**, pero el estado de la orden es el principal.
+- El sistema debe reflejar fielmente el proceso real del negocio, no simplificaciones irreales.
+- Antes de seguir creando tablas o formularios en Access, se prioriza tener claras las reglas del dominio.
+
+### Resultado
+Se dejó definida la **base conceptual y lógica** del sistema de tintorería, asegurando que la futura implementación en Access sea sólida, coherente y profesional.
