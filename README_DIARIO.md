@@ -72,7 +72,7 @@ Iniciar el desarrollo técnico del sistema mediante la creación del modelo inic
 - Repositorio sincronizado correctamente con GitHub.
 - Proyecto preparado para avanzar hacia la definición del flujo de negocio y lógica de estados.
 
-## 📅 Día 3 – Modelado del flujo del negocio (Tintorería)
+## 📅 Día 3 – Modelado del flujo del negocio 
 
 ### Objetivo del día
 Definir correctamente el flujo real de trabajo de la tintorería antes de seguir implementando en la base de datos (evitar errores y retrabajo).
@@ -103,3 +103,4 @@ Definir correctamente el flujo real de trabajo de la tintorería antes de seguir
 
 ### Resultado
 Se dejó definida la **base conceptual y lógica** del sistema de tintorería, asegurando que la futura implementación en Access sea sólida, coherente y profesional.
+
