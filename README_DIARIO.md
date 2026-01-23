@@ -1,4 +1,4 @@
-## 📅 Día 1 – Análisis del negocio y definición del proyecto
+## Día 1 – Análisis del negocio y definición del proyecto
 
 ### Objetivo del día
 Analizar el funcionamiento real de la tintorería y definir el alcance del sistema a desarrollar, asegurando que el proyecto responda a necesidades reales del negocio y no a un ejercicio académico.
@@ -43,7 +43,7 @@ Analizar el funcionamiento real de la tintorería y definir el alcance del siste
 
 -------------------------------------------------------
 
-## 📅 Día 2 – Diseño de base de datos y control de versiones
+## Día 2 – Diseño de base de datos y control de versiones
 
 ### Objetivo del día
 Iniciar el desarrollo técnico del sistema mediante la creación del modelo inicial de la base de datos y establecer un flujo correcto de control de versiones usando Git y GitHub.
@@ -72,7 +72,7 @@ Iniciar el desarrollo técnico del sistema mediante la creación del modelo inic
 - Repositorio sincronizado correctamente con GitHub.
 - Proyecto preparado para avanzar hacia la definición del flujo de negocio y lógica de estados.
 
-## 📅 Día 3 – Modelado del flujo del negocio 
+## Día 3 – Modelado del flujo del negocio 
 
 ### Objetivo del día
 Definir correctamente el flujo real de trabajo de la tintorería antes de seguir implementando en la base de datos (evitar errores y retrabajo).
@@ -103,4 +103,59 @@ Definir correctamente el flujo real de trabajo de la tintorería antes de seguir
 
 ### Resultado
 Se dejó definida la **base conceptual y lógica** del sistema de tintorería, asegurando que la futura implementación en Access sea sólida, coherente y profesional.
+
+📅 Día 4 — Modelado Relacional en Microsoft Access
+
+Objetivo del día:
+Diseñar, corregir y validar el modelo relacional de la base de datos del sistema de la tintorería utilizando Microsoft Access, asegurando integridad referencial y consistencia de datos.
+
+Actividades realizadas:
+
+Creación de la base de datos tintoreria.accdb.
+
+Definición completa de las tablas definitivas del sistema:
+
+cliente
+
+orden
+
+prenda
+
+gancho
+
+orden_gancho
+
+Configuración correcta de claves primarias:
+
+AutoNumber para entidades principales.
+
+Clave primaria compuesta (id_orden, id_gancho) en orden_gancho.
+
+Corrección de tipos de datos para compatibilidad relacional:
+
+AutoNumber en claves primarias.
+
+Number (Long Integer) en todas las claves foráneas.
+
+Eliminación y recreación de relaciones para resolver conflictos de tipos de datos.
+
+Creación de relaciones definitivas con Enforce Referential Integrity activado:
+
+cliente (1) → orden (∞)
+
+orden (1) → prenda (∞)
+
+orden (1) → orden_gancho (∞)
+
+gancho (1) → orden_gancho (∞)
+
+Verificación visual de cardinalidades (1 — ∞) y líneas sólidas.
+
+Confirmación de que la tabla orden actúa como núcleo del sistema.
+
+Resultado:
+El modelo de base de datos quedó correctamente normalizado, sin errores de integridad, con relaciones estables y listo para avanzar a la capa de consultas, formularios y lógica de negocio.
+
+Estado del proyecto:
+Estructura de base de datos finalizada y validada.
 
