@@ -111,7 +111,7 @@ Diseñar, corregir y validar el modelo relacional de la base de datos del sistem
 
 ---
 
-### 🛠️ Actividades Realizadas
+### Actividades Realizadas
 
 - Creación de la base de datos:
   - `tintoreria.accdb`
@@ -158,3 +158,4 @@ El modelo de base de datos quedó **correctamente normalizado**, estable, sin er
  Próximo paso: consultas, formularios y reglas de negocio (asignación y liberación de ganchos).
 
 ---
+
