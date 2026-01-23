@@ -104,58 +104,57 @@ Definir correctamente el flujo real de trabajo de la tintorería antes de seguir
 ### Resultado
 Se dejó definida la **base conceptual y lógica** del sistema de tintorería, asegurando que la futura implementación en Access sea sólida, coherente y profesional.
 
-📅 Día 4 — Modelado Relacional en Microsoft Access
+##  Día 4 — Modelado Relacional en Microsoft Access
 
-Objetivo del día:
-Diseñar, corregir y validar el modelo relacional de la base de datos del sistema de la tintorería utilizando Microsoft Access, asegurando integridad referencial y consistencia de datos.
+###  Objetivo
+Diseñar, corregir y validar el modelo relacional de la base de datos del sistema de la tintorería utilizando Microsoft Access, asegurando integridad referencial, consistencia de datos y una base sólida para la lógica del sistema.
 
-Actividades realizadas:
+---
 
-Creación de la base de datos tintoreria.accdb.
+### 🛠️ Actividades Realizadas
 
-Definición completa de las tablas definitivas del sistema:
+- Creación de la base de datos:
+  - `tintoreria.accdb`
 
-cliente
+- Definición de las tablas definitivas del sistema:
+  - `cliente`
+  - `orden`
+  - `prenda`
+  - `gancho`
+  - `orden_gancho`
 
-orden
+- Configuración de claves primarias:
+  - Uso de `AutoNumber` en entidades principales.
+  - Implementación de clave primaria compuesta (`id_orden`, `id_gancho`) en la tabla `orden_gancho`.
 
-prenda
+- Corrección de tipos de datos:
+  - Claves primarias: `AutoNumber`.
+  - Claves foráneas: `Number (Long Integer)` para compatibilidad relacional.
 
-gancho
+- Eliminación de relaciones incorrectas y recreación desde cero para resolver conflictos de tipos de datos.
 
-orden_gancho
+- Creación de relaciones definitivas con **Enforce Referential Integrity** activado:
+  - `cliente (1) → orden (∞)`
+  - `orden (1) → prenda (∞)`
+  - `orden (1) → orden_gancho (∞)`
+  - `gancho (1) → orden_gancho (∞)`
 
-Configuración correcta de claves primarias:
+- Verificación visual:
+  - Cardinalidades correctas (1 — ∞).
+  - Líneas sólidas.
+  - Sin uso de `Cascade Delete`.
 
-AutoNumber para entidades principales.
+- Confirmación de que la tabla `orden` funciona como núcleo central del sistema.
 
-Clave primaria compuesta (id_orden, id_gancho) en orden_gancho.
+---
 
-Corrección de tipos de datos para compatibilidad relacional:
+### Resultado
+El modelo de base de datos quedó **correctamente normalizado**, estable, sin errores de integridad referencial y preparado para avanzar a la capa de consultas, formularios y lógica de negocio.
 
-AutoNumber en claves primarias.
+---
 
-Number (Long Integer) en todas las claves foráneas.
+### Estado del Proyecto
+ Estructura de base de datos finalizada y validada  
+ Próximo paso: consultas, formularios y reglas de negocio (asignación y liberación de ganchos).
 
-Eliminación y recreación de relaciones para resolver conflictos de tipos de datos.
-
-Creación de relaciones definitivas con Enforce Referential Integrity activado:
-
-cliente (1) → orden (∞)
-
-orden (1) → prenda (∞)
-
-orden (1) → orden_gancho (∞)
-
-gancho (1) → orden_gancho (∞)
-
-Verificación visual de cardinalidades (1 — ∞) y líneas sólidas.
-
-Confirmación de que la tabla orden actúa como núcleo del sistema.
-
-Resultado:
-El modelo de base de datos quedó correctamente normalizado, sin errores de integridad, con relaciones estables y listo para avanzar a la capa de consultas, formularios y lógica de negocio.
-
-Estado del proyecto:
-Estructura de base de datos finalizada y validada.
-
+---
