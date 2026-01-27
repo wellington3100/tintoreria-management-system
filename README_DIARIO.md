@@ -169,14 +169,12 @@ Comenzar la capa de interfaz del sistema y verificar que la información ingresa
 - Relación Orden–Prenda operativa
 - Base sólida para continuar con lógica de negocio y experiencia de usuario
 
----
+-------------------------------------------------------
 
 ## Día 6 – Seguridad y usabilidad en formularios
 
 ### Objetivo del día
 Mejorar la interfaz del sistema ocultando campos técnicos y protegiendo información sensible para evitar errores por parte del operador.
-
----
 
 ###Trabajo realizado
 - Se identificaron los campos técnicos que no deben ser visibles ni editables por el operador.
@@ -198,6 +196,7 @@ Mejorar la interfaz del sistema ocultando campos técnicos y protegiendo informa
 - Interfaz segura para el operador
 - Menor riesgo de corrupción de datos
 - Base lista para agregar reglas de negocio y control de estados
+
 
 
 
