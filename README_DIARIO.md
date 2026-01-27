@@ -159,3 +159,31 @@ El modelo de base de datos quedó **correctamente normalizado**, estable, sin er
 
 ---
 
+## Día 5 – Formularios y persistencia de datos
+
+### Objetivo del día
+Comenzar la capa de interfaz del sistema y verificar que la información ingresada se guarde correctamente en la base de datos.
+
+### Trabajo realizado
+- Se creó y configuró el formulario principal `frm_orden`.
+- Se creó el subformulario `sub_prendas` vinculado a la orden mediante `id_orden`.
+- Se verificó la relación correcta entre formulario principal y subformulario.
+- Se confirmó que Access guarda los datos automáticamente al cambiar de campo o registro.
+- Se realizó una prueba completa:
+  - Crear una orden
+  - Agregar prendas desde el subformulario
+  - Cerrar y volver a abrir el formulario
+  - Confirmar que la información persiste en la base de datos
+
+### Aprendizajes clave
+- Microsoft Access no requiere botón de “Guardar”; el guardado es automático.
+- La persistencia de datos confirma que la estructura de tablas y formularios está correctamente configurada.
+- El subformulario funciona correctamente dentro del flujo Orden → Prendas.
+
+### Estado del proyecto
+- Formularios funcionales
+- Datos persistentes
+- Relación Orden–Prenda operativa
+- Base sólida para continuar con lógica de negocio y experiencia de usuario
+
+
