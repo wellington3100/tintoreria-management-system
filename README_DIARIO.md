@@ -153,12 +153,6 @@ El modelo de base de datos quedó **correctamente normalizado**, estable, sin er
 
 ---
 
-### Estado del Proyecto
- Estructura de base de datos finalizada y validada  
- Próximo paso: consultas, formularios y reglas de negocio (asignación y liberación de ganchos).
-
----
-
 ## Día 5 – Formularios y persistencia de datos
 
 ### Objetivo del día
@@ -185,5 +179,6 @@ Comenzar la capa de interfaz del sistema y verificar que la información ingresa
 - Datos persistentes
 - Relación Orden–Prenda operativa
 - Base sólida para continuar con lógica de negocio y experiencia de usuario
+
 
 
