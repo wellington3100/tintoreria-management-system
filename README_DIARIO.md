@@ -35,12 +35,6 @@ Analizar el funcionamiento real de la tintorería y definir el alcance del siste
 - Se priorizará simplicidad operativa sobre complejidad técnica innecesaria.
 - El diseño se realizará de forma incremental, validando cada etapa antes de avanzar.
 
-### Estado del proyecto
-- Alcance del sistema definido.
-- Flujo de negocio claro.
-- Bases establecidas para iniciar el diseño técnico y la base de datos.
-
-
 -------------------------------------------------------
 
 ## Día 2 – Diseño de base de datos y control de versiones
@@ -66,11 +60,6 @@ Iniciar el desarrollo técnico del sistema mediante la creación del modelo inic
 - El sistema está pensado para uso real en la computadora del negocio, con base de datos local.
 - No toda validación se resolvió en SQL; algunas reglas se delegarán al backend.
 - Se priorizó un diseño simple y escalable, evitando sobreingeniería en esta etapa.
-
-### Estado del proyecto
-- Esquema inicial de base de datos definido y versionado.
-- Repositorio sincronizado correctamente con GitHub.
-- Proyecto preparado para avanzar hacia la definición del flujo de negocio y lógica de estados.
 
 -------------------------------------------------------
 
@@ -213,6 +202,7 @@ Mejorar la interfaz del sistema ocultando campos técnicos y protegiendo informa
 -Interfaz segura para el operador
 -Menor riesgo de corrupción de datos
 -Base lista para agregar reglas de negocio y control de estados
+
 
 
 
