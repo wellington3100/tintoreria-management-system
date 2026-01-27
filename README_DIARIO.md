@@ -102,8 +102,6 @@ Se dejó definida la **base conceptual y lógica** del sistema de tintorería, a
 ###  Objetivo
 Diseñar, corregir y validar el modelo relacional de la base de datos del sistema de la tintorería utilizando Microsoft Access, asegurando integridad referencial, consistencia de datos y una base sólida para la lógica del sistema.
 
----
-
 ### Actividades Realizadas
 
 - Creación de la base de datos:
@@ -202,6 +200,7 @@ Mejorar la interfaz del sistema ocultando campos técnicos y protegiendo informa
 -Interfaz segura para el operador
 -Menor riesgo de corrupción de datos
 -Base lista para agregar reglas de negocio y control de estados
+
 
 
 
