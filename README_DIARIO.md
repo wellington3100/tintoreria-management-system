@@ -137,8 +137,6 @@ Diseñar, corregir y validar el modelo relacional de la base de datos del sistem
 
 - Confirmación de que la tabla `orden` funciona como núcleo central del sistema.
 
----
-
 ### Resultado
 El modelo de base de datos quedó **correctamente normalizado**, estable, sin errores de integridad referencial y preparado para avanzar a la capa de consultas, formularios y lógica de negocio.
 
@@ -192,14 +190,15 @@ Mejorar la interfaz del sistema ocultando campos técnicos y protegiendo informa
 -Las relaciones entre formularios permanecen intactas.
 
 ## Aprendizajes clave
--Los IDs técnicos deben existir en los formularios, pero no ser visibles al usuario.
--Ocultar campos mejora la seguridad y reduce errores operativos.
--Access permite separar claramente la lógica interna de la experiencia del operador.
--Estado del proyecto
--Formularios más limpios y profesionales
--Interfaz segura para el operador
--Menor riesgo de corrupción de datos
--Base lista para agregar reglas de negocio y control de estados
+- Los IDs técnicos deben existir en los formularios, pero no ser visibles al usuario.
+- Ocultar campos mejora la seguridad y reduce errores operativos.
+- Access permite separar claramente la lógica interna de la experiencia del operador.
+- Estado del proyecto
+- Formularios más limpios y profesionales
+- Interfaz segura para el operador
+- Menor riesgo de corrupción de datos
+- Base lista para agregar reglas de negocio y control de estados
+
 
 
 
