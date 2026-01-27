@@ -72,6 +72,8 @@ Iniciar el desarrollo técnico del sistema mediante la creación del modelo inic
 - Repositorio sincronizado correctamente con GitHub.
 - Proyecto preparado para avanzar hacia la definición del flujo de negocio y lógica de estados.
 
+-------------------------------------------------------
+
 ## Día 3 – Modelado del flujo del negocio 
 
 ### Objetivo del día
@@ -103,6 +105,8 @@ Definir correctamente el flujo real de trabajo de la tintorería antes de seguir
 
 ### Resultado
 Se dejó definida la **base conceptual y lógica** del sistema de tintorería, asegurando que la futura implementación en Access sea sólida, coherente y profesional.
+
+-------------------------------------------------------
 
 ##  Día 4 — Modelado Relacional en Microsoft Access
 
@@ -151,7 +155,7 @@ Diseñar, corregir y validar el modelo relacional de la base de datos del sistem
 ### Resultado
 El modelo de base de datos quedó **correctamente normalizado**, estable, sin errores de integridad referencial y preparado para avanzar a la capa de consultas, formularios y lógica de negocio.
 
----
+-------------------------------------------------------
 
 ## Día 5 – Formularios y persistencia de datos
 
@@ -179,6 +183,38 @@ Comenzar la capa de interfaz del sistema y verificar que la información ingresa
 - Datos persistentes
 - Relación Orden–Prenda operativa
 - Base sólida para continuar con lógica de negocio y experiencia de usuario
+
+---
+
+## Día 6 – Seguridad y usabilidad en formularios
+
+### Objetivo del día
+Mejorar la interfaz del sistema ocultando campos técnicos y protegiendo información sensible para evitar errores por parte del operador.
+
+---
+
+###Trabajo realizado
+- Se identificaron los campos técnicos que no deben ser visibles ni editables por el operador.
+- Se ocultó el campo id_orden en el formulario principal frm_orden.
+- Se ocultaron los campos id_prenda e id_orden en el subformulario sub_prendas.
+- Se mantuvieron los campos ocultos dentro del formulario para conservar la relación y el funcionamiento interno.
+- Se bloqueó el campo total para evitar edición manual.
+- Se verificó que:
+-La creación de órdenes sigue funcionando correctamente.
+-La carga de prendas en el subformulario no se ve afectada.
+-Las relaciones entre formularios permanecen intactas.
+
+## Aprendizajes clave
+-Los IDs técnicos deben existir en los formularios, pero no ser visibles al usuario.
+-Ocultar campos mejora la seguridad y reduce errores operativos.
+-Access permite separar claramente la lógica interna de la experiencia del operador.
+-Estado del proyecto
+-Formularios más limpios y profesionales
+-Interfaz segura para el operador
+-Menor riesgo de corrupción de datos
+-Base lista para agregar reglas de negocio y control de estados
+
+
 
 
 
