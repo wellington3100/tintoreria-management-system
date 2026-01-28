@@ -197,12 +197,41 @@ Mejorar la interfaz del sistema ocultando campos técnicos y protegiendo informa
 - Menor riesgo de corrupción de datos
 - Base lista para agregar reglas de negocio y control de estados
 
+-------------------------------------------------------
 
+## Día 7 – Subformularios, eliminación de registros y estados
 
+### Objetivo del día
+Validar completamente el funcionamiento del subformulario de prendas, asegurando que las operaciones básicas (crear, editar y eliminar) impacten correctamente en la base de datos y reforzar el uso de estados controlados mediante ComboBox.
 
+### Trabajo realizado
+- Se confirmó que el subformulario `sub_prendas` guarda correctamente los datos en la tabla `prenda`.
+- Se verificó la relación funcional entre `frm_orden` y `sub_prendas`.
+- Se probó la persistencia de datos:
+  - Crear prendas
+  - Cerrar el formulario
+  - Volver a abrir y confirmar que los registros siguen presentes
+- Se validó la eliminación de prendas desde el subformulario:
+  - Selección de registro
+  - Eliminación con tecla Delete
+  - Confirmación de borrado real en la tabla
+- Se convirtió el campo de estado en un ComboBox para evitar texto libre y errores del operador.
+- Se comprobó el flujo completo CRUD:
+  - Crear
+  - Leer
+  - Editar
+  - Eliminar
 
+### Aprendizajes clave
+- Access maneja automáticamente el guardado de datos al cambiar de campo o registro.
+- Los subformularios permiten gestionar relaciones uno-a-muchos de forma directa y segura.
+- El uso de ComboBox en campos de estado evita inconsistencias y errores humanos.
+- La eliminación desde subformularios borra registros reales de la tabla, no solo visuales.
 
+### Estado del proyecto
+- Relación Orden–Prenda completamente funcional
+- Subformulario operativo con CRUD completo
+- Estados controlados y listos para estandarización
+- Base sólida para avanzar a reglas de negocio y automatizaciones
 
-
-
-
+-------------------------------------------------------
