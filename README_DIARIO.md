@@ -235,3 +235,32 @@ Validar completamente el funcionamiento del subformulario de prendas, asegurando
 - Base sólida para avanzar a reglas de negocio y automatizaciones
 
 -------------------------------------------------------
+
+## Día 8 – Lógica de cantidad de prendas y diseño de flujo real
+## Objetivo del día
+Mejorar el flujo real de captura de prendas por orden, evitando duplicar datos manualmente y preparando el sistema para manejar múltiples prendas iguales dentro de una misma orden.
+
+###Trabajo realizado
+- Se replanteó el modelo de ingreso de prendas para una orden:
+- Una orden puede contener múltiples prendas.
+- No es necesario crear una orden por cada prenda.
+- Se definió una estrategia de UX más eficiente:
+- Capturar los datos de la prenda una sola vez (color, material, servicio, estado).
+- Usar un contador de cantidad para representar prendas iguales.
+- Confirmar el alta de prendas solo cuando el operador lo decida.
+- Se creó un textbox de cantidad no ligado a la base de datos (unbound control):
+- Funciona como contador visual.
+- No altera directamente la tabla prenda.
+- Se separó correctamente la lógica:
+- UI (formularios) → manejo de cantidad y experiencia de usuario.
+- Base de datos → inserción real de registros solo al confirmar.
+
+### Se comenzó la implementación de botones:
+- Botón para sumar cantidad (contador).
+- Botón de confirmación para insertar múltiples registros (pendiente de finalizar).
+
+## Estado del proyecto
+- Modelo de órdenes y prendas correctamente definido.
+- Flujo de negocio claro y alineado con una tintorería real.
+- Lógica de cantidad de prendas diseñada (implementación parcial).
+- Sistema listo para completar la acción de confirmación y cálculo automático de totales.
