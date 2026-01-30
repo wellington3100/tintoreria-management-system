@@ -240,7 +240,7 @@ Validar completamente el funcionamiento del subformulario de prendas, asegurando
 ## Objetivo del día
 Mejorar el flujo real de captura de prendas por orden, evitando duplicar datos manualmente y preparando el sistema para manejar múltiples prendas iguales dentro de una misma orden.
 
-###Trabajo realizado
+### Trabajo realizado
 - Se replanteó el modelo de ingreso de prendas para una orden:
 - Una orden puede contener múltiples prendas.
 - No es necesario crear una orden por cada prenda.
@@ -264,3 +264,4 @@ Mejorar el flujo real de captura de prendas por orden, evitando duplicar datos m
 - Flujo de negocio claro y alineado con una tintorería real.
 - Lógica de cantidad de prendas diseñada (implementación parcial).
 - Sistema listo para completar la acción de confirmación y cálculo automático de totales.
+
