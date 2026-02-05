@@ -273,33 +273,34 @@ Incorporar el concepto de servicios al sistema, permitir seleccionar un servicio
 
 ## Trabajo realizado
 
--Se creó la tabla servicio con estructura básica (id, nombre, precio).
+- Se creó la tabla servicio con estructura básica (id, nombre, precio).
 
--Se vinculó la tabla servicio al flujo de prendas.
+- Se vinculó la tabla servicio al flujo de prendas.
 
--Se configuró correctamente un ComboBox de servicios en sub_prendas usando SQL manual (sin wizard).
+- Se configuró correctamente un ComboBox de servicios en sub_prendas usando SQL manual (sin wizard).
 
--Se resolvió el error de RecordSource ~sq_Combo18, entendiendo cómo Access maneja consultas temporales.
+- Se resolvió el error de RecordSource ~sq_Combo18, entendiendo cómo Access maneja consultas temporales.
 
--Se agregó el campo cantidad por prenda.
+- Se agregó el campo cantidad por prenda.
 
--Se validó que:
-  -Cada prenda guarda su cantidad.
-  -Cada prenda queda asociada a un servicio.
-  -Se dejó preparada la estructura para:
-  -Calcular subtotal por prenda (precio × cantidad).
-  -Sumar automáticamente al total de la orden en el siguiente paso.
+- Se validó que:
+  - Cada prenda guarda su cantidad.
+  - Cada prenda queda asociada a un servicio.
+  - Se dejó preparada la estructura para:
+  - Calcular subtotal por prenda (precio × cantidad).
+  - Sumar automáticamente al total de la orden en el siguiente paso.
   
 ## Aprendizajes clave
--Los ComboBox en Access deben configurarse manualmente para evitar errores ocultos.
--Las consultas ~sq_ son temporales y no deben usarse como fuente estable.
+- Los ComboBox en Access deben configurarse manualmente para evitar errores ocultos.
+- Las consultas ~sq_ son temporales y no deben usarse como fuente estable.
 ## El modelo correcto es:
 `Orden → Prendas → Servicio`
 `Separar servicio y cantidad es clave para escalar precios y lógica de negocio.`
 ## Estado del proyecto
-Tabla servicio operativa
-Prendas con cantidad y servicio asociado
-Interfaz más clara para el operador
-Base sólida para implementar subtotales y total automático
+- Tabla servicio operativa
+- Prendas con cantidad y servicio asociado
+- Interfaz más clara para el operador
+- Base sólida para implementar subtotales y total automático
+
 
 
