@@ -272,10 +272,15 @@ Mejorar el flujo real de captura de prendas por orden, evitando duplicar datos m
 Incorporar el concepto de servicios al sistema, permitir seleccionar un servicio por prenda y sentar las bases para el cálculo de subtotales y total de la orden.
 
 ## Trabajo realizado
+
 -Se creó la tabla servicio con estructura básica (id, nombre, precio).
+
 -Se vinculó la tabla servicio al flujo de prendas.
+
 -Se configuró correctamente un ComboBox de servicios en sub_prendas usando SQL manual (sin wizard).
+
 -Se resolvió el error de RecordSource ~sq_Combo18, entendiendo cómo Access maneja consultas temporales.
+
 -Se agregó el campo cantidad por prenda.
 
 -Se validó que:
@@ -296,4 +301,5 @@ Tabla servicio operativa
 Prendas con cantidad y servicio asociado
 Interfaz más clara para el operador
 Base sólida para implementar subtotales y total automático
+
 
